@@ -1,7 +1,7 @@
+const config = require('./config');
 const { WebhookClient } = require('discord.js');
 
-// Webhook Client
-const webhookClient = new WebhookClient({ url: webhookURL });
+const webhookClient = new WebhookClient({ url: config.webhookURL });
 
 // Message Send
 function sendMessage() {
