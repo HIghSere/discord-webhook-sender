@@ -3,9 +3,6 @@ const { WebhookClient } = require('discord.js');
 // Webhook Client
 const webhookClient = new WebhookClient({ url: webhookURL });
 
-// Message Content
-const messageContent = 'test';
-
 // Message Send
 function sendMessage() {
     webhookClient.send(config.messageContent)
